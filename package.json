@@ -1,16 +1,16 @@
 {
   "name": "validate-deep",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Validate nested javascript objects with simple functions.",
+  "main": "lib/index.js",
   "scripts": {
     "test": "jest",
     "clean": "rm -rf lib && mkdir lib",
     "build": "babel src --out-dir lib",
     "prepublish": "npm run clean && npm run build"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["validation", "validate", "nested", "recursive", "deep", "object"],
+  "author": "Jordan Burnett",
   "license": "ISC",
   "devDependencies": {
     "babel-cli": "^6.26.0",
