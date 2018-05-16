@@ -1,13 +1,18 @@
 {
   "name": "validate-deep",
-  "version": "1.0.0",
-  "description": "Validate nested javascript objects with simple functions.",
+  "version": "1.0.1",
+  "description": "Validate nested javascript objects against simple rules.",
+  "repository": { 
+    "type": "git",
+    "url": "https://github.com/jordan-burnett/validate-deep"
+  },
   "main": "lib/index.js",
   "scripts": {
     "test": "jest",
     "clean": "rm -rf lib && mkdir lib",
     "build": "babel src --out-dir lib",
-    "prepublish": "npm run clean && npm run build"
+    "prepublish": "npm run clean && npm run build",
+    "dev": "npm run build -- --watch"
   },
   "keywords": ["validation", "validate", "nested", "recursive", "deep", "object"],
   "author": "Jordan Burnett",

@@ -14,7 +14,8 @@ export function getErrors(value, validators, context){
     validators = [validators];
   }
   let errors = validators.map(validator => validator(value, context));
-  return errors.filter(error => error); // Filter out empty errors
+  errors = errors.filter(error => error); // Filter out empty errors
+  return errors.length ? errors : null;
 }
 
 /**

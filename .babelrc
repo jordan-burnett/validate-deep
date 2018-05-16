@@ -6,7 +6,16 @@
       }
     }]
   ],
-  "ignore": [
-    "**/*.test.js"
-  ]
+  "env": {
+    "development": {
+      "ignore": [
+        "**/*.test.js"
+      ],
+    },
+    "production": {
+      "ignore": [
+        "**/*.test.js"
+      ],
+    }
+  }
 }
